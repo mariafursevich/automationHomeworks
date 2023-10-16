@@ -28,8 +28,8 @@ public class Main {
                 " Please, enter your name and job title (2 words with spaces): ");
         String answer1 = scanner.nextLine();
         String[] entredValues= answer1.split(" ");
-        String name = entredValues[0];
-        String job = entredValues[1];
+        String name = enteredValues[0];
+        String job = enteredValues[1];
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("Good job, "+ name +"!"+ " Do you want to know more about yourself?" + " Enter yes or no");
         String answer2 = scanner2.nextLine();
