@@ -22,11 +22,11 @@ public class MyPets extends Category implements Actions {
             int weight;
             do{
                 try {
-                    System.out.println("What is " + myCat.name + " weight?");
+                    System.out.println("What is " + myCat.name + " weight?"); //Обработка исключения, если пользователь ввел спец. символ, например %
                 weight = scanner.nextInt();
                 } catch (Exception e) {
                     System.out.println("Sorry, the operation is impossible! Rerun the program.");
-                    break;
+                    break;  //Если ловим ошибку, то прекращаем работу программы
                 }
             Cat.printCatWeight(weight);
             Cat.amountOfFoodPerDay(weight, myCat.name);
